@@ -10,8 +10,8 @@
 -- 
 -- ---
 
-CREATE DATABASE `bpmspace_liam2_v1a` /*!40100 DEFAULT CHARACTER SET utf8 */;
-Use bpmspace_liam2_v1a;
+CREATE DATABASE `bpmspace_liam2_v1` /*!40100 DEFAULT CHARACTER SET utf8 */;
+Use bpmspace_liam2_v1;
 
 DROP TABLE IF EXISTS `liam2_User`;
 
