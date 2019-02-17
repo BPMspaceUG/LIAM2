@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Title -->
+  <title>bpmspace_liam2_v2 - [APMSProject]</title>
+  <!-- CSS via CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <style>
+
+  </style>
+  <!-- JS via CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+</head>
+<body><!-- body content starts here  -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+  <a class="navbar-brand" href="index.php">bpmspace_liam2_v2</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-user"></i> Account
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="login.php?logout=1"><i class="fa fa-sign-out"></i> Logout</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main role="main">
+  <div class="container-fluid w-100 m-0 p-0">
+    <div class="text-center text-primary initloadingtext">
+      <h1><i class="fa fa-spinner fa-pulse"></i> Loading...</h1>
+    </div>
+    <div class="card mainapp collapse border-0">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+                      <li class="nav-item">
+    <a class="nav-link" href="#dashboard" data-toggle="tab">
+      <i class="fa fa-dashboard"></i>&nbsp;
+      <span class="table_alias">Dashboard</span>
+    </a>
+  </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#liam2_Role" data-toggle="tab">
+                <i class="fa fa-users"></i>&nbsp;
+                <span class="table_alias">Role</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#liam2_User" data-toggle="tab">
+                <i class="fa fa-user-o"></i>&nbsp;
+                <span class="table_alias">User</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#liam2_User_email" data-toggle="tab">
+                <i class=""></i>&nbsp;
+                <span class="table_alias">Useremail</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#liam2_email" data-toggle="tab">
+                <i class="fa fa-envelope-o"></i>&nbsp;
+                <span class="table_alias">Email</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#state" data-toggle="tab">
+                <i class=""></i>&nbsp;
+                <span class="table_alias">State</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#state_machines" data-toggle="tab">
+                <i class=""></i>&nbsp;
+                <span class="table_alias">Statemachines</span>
+              </a>
+            </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane" id="dashboard">  <div id="dashboardcontent"></div></div>
+            <div role="tabpanel" class="tab-pane" id="liam2_Role"><div class="table_liam2_Role"></div></div>
+            <div role="tabpanel" class="tab-pane" id="liam2_User"><div class="table_liam2_User"></div></div>
+            <div role="tabpanel" class="tab-pane" id="liam2_User_email"><div class="table_liam2_User_email"></div></div>
+            <div role="tabpanel" class="tab-pane" id="liam2_email"><div class="table_liam2_email"></div></div>
+            <div role="tabpanel" class="tab-pane" id="state"><div class="table_state"></div></div>
+            <div role="tabpanel" class="tab-pane" id="state_machines"><div class="table_state_machines"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>  <!--  Footer -->
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">
+        <b>bpmspace_liam2_v2</b> is using
+        <a target="_blank" href="http://php.net/">PHP</a>,&nbsp;
+        <a target="_blank" href="http://getbootstrap.com/">Bootstrap4</a>,&nbsp;
+        <a target="_blank" href="https://jquery.com/">jQuery</a>,&nbsp;
+        <a target="_blank" href="http://visjs.org/">visjs</a>
+      </span>
+    </div>
+  </footer>
+  <!-- JS -->
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function() {
+      DB.API_URL = 'api.php';
+      // Create objects
+            let tbl_liam2_Role = new Table('liam2_Role', '.table_liam2_Role', 0, function(){
+        tbl_liam2_Role.GUIOptions.showWorkflowButton = true;
+        tbl_liam2_Role.loadRows(function(){ tbl_liam2_Role.renderHTML(); });
+      });
+      let tbl_liam2_User = new Table('liam2_User', '.table_liam2_User', 0, function(){
+        tbl_liam2_User.GUIOptions.showWorkflowButton = true;
+        tbl_liam2_User.loadRows(function(){ tbl_liam2_User.renderHTML(); });
+      });
+      let tbl_liam2_User_email = new Table('liam2_User_email', '.table_liam2_User_email', 0, function(){
+        tbl_liam2_User_email.GUIOptions.showWorkflowButton = true;
+        tbl_liam2_User_email.loadRows(function(){ tbl_liam2_User_email.renderHTML(); });
+      });
+      let tbl_liam2_email = new Table('liam2_email', '.table_liam2_email', 0, function(){
+        tbl_liam2_email.GUIOptions.showWorkflowButton = true;
+        tbl_liam2_email.loadRows(function(){ tbl_liam2_email.renderHTML(); });
+      });
+      let tbl_state = new Table('state', '.table_state', 0, function(){
+        tbl_state.GUIOptions.showWorkflowButton = true;
+        tbl_state.loadRows(function(){ tbl_state.renderHTML(); });
+      });
+      let tbl_state_machines = new Table('state_machines', '.table_state_machines', 0, function(){
+        tbl_state_machines.GUIOptions.showWorkflowButton = true;
+        tbl_state_machines.loadRows(function(){ tbl_state_machines.renderHTML(); });
+      });
+
+      // Loading disable
+      $('.initloadingtext').hide();
+      $('.mainapp').show();
+    });
+  </script>
+  <script src="js/custom.js"></script>
+</body>
+</html>
