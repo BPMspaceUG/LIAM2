@@ -4,20 +4,8 @@
     ==================================================
     Generated: 2019-01-30 15:32:00
   */
+ require_once (__DIR__."/bpmspace_liam2_v2-config.secret.inc.php");
 
-  // Database Login
-  define("DB_USER", "root");
-  define("DB_PASS", "");
-  define("DB_HOST", "localhost");
-  define("DB_NAME", "bpmspace_liam2_v2");
-
-  // API-URL
-  define("API_URL", "");
-  define("API_URL_LIAM", ""); // for Login
-  // AuthKey
-  define("AUTH_KEY", "");
-  // Machine-Token for internal API Calls
-  define("MACHINE_TOKEN", "");
 
   // WhiteLists for getFile
   @define("WHITELIST_PATHS", array("ordner/test/", "ordner/"));
