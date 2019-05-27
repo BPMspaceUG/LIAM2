@@ -3,6 +3,8 @@
 [BPMSpace Mailhog Web](http://HOSTNAME:EXT_PORT_MAILHOG_HTTP)
 
 
-# Test 2
-## step 1
-## step 2
+# LIAM2 Enviroment
+## LIAM2 Server UP
+[LIAM2 Server](http://HOSTNAME:EXT_PORT_LIAM2_HTTP)
+## LAIM2 Client UP
+[LIAM2 Server](http://HOSTNAME:EXT_PORT_LIAM2_CLIENT_HTTP)
