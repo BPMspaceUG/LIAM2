@@ -1,6 +1,6 @@
 
 # Test if Mailhog is Up
-Check if 3 Mails have arrived (LiamServer,LiamClient and AcceptanceTest) at [BPMSpace Mailhog Web](http://HOSTNAME:EXT_PORT_MAILHOG_HTTP)
+Check if 2 Mails have arrived (LiamServer,LiamClient and AcceptanceTest) at [BPMSpace Mailhog Web](http://HOSTNAME:EXT_PORT_MAILHOG_HTTP)
 # LIAM2 Enviroment
 check if DB is up an something in the tables & use any DB client you like or CLI on an EXTERNAL SERVER!
 -mysql -u root -p -h HOSTNAME -P EXT_PORT_MARIADB_SQL use password DB_ROOT_PASSWD
