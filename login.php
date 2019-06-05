@@ -1,5 +1,5 @@
 <?php
-    // Includes
+    // Includes!
     require_once(__DIR__.'/src/DatabaseHandler.inc.php'); // For Config (AuthKey)
     require_once(__DIR__.'/src/AuthHandler.inc.php');
 
