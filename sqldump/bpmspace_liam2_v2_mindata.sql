@@ -1,6 +1,7 @@
 --
 -- Dumping data for table `liam2_Role`
 --
+SET FOREIGN_KEY_CHECKS=0;
 
 LOCK TABLES `liam2_Role` WRITE;
 /*!40000 ALTER TABLE `liam2_Role` DISABLE KEYS */;
@@ -8,15 +9,6 @@ INSERT INTO `liam2_Role` VALUES (9991,'Adminstrators',2),(9992,'Users',2);
 /*!40000 ALTER TABLE `liam2_Role` ENABLE KEYS */;
 UNLOCK TABLES;
 
---
--- Table structure for table `liam2_Role_LIAMUSER`
---
-
-LOCK TABLES `liam2_Role_LIAMUSER` WRITE;
-/*!40000 ALTER TABLE `liam2_Role_LIAMUSER` DISABLE KEYS */;
-INSERT INTO `liam2_Role_LIAMUSER` VALUES (765765,999999999,9991,5);
-/*!40000 ALTER TABLE `liam2_Role_LIAMUSER` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Dumping data for table `liam2_User`
@@ -50,5 +42,14 @@ INSERT INTO `liam2_User_email` VALUES (956757,999999999,999,11);
 /*!40000 ALTER TABLE `liam2_User_email` ENABLE KEYS */;
 UNLOCK TABLES;
 
+--
+-- Table structure for table `liam2_Role_LIAMUSER`
+--
 
+LOCK TABLES `liam2_Role_LIAMUSER` WRITE;
+/*!40000 ALTER TABLE `liam2_Role_LIAMUSER` DISABLE KEYS */;
+INSERT INTO `liam2_Role_LIAMUSER` VALUES (765765,999999999,9991,5);
+/*!40000 ALTER TABLE `liam2_Role_LIAMUSER` ENABLE KEYS */;
+UNLOCK TABLES;
 
+SET FOREIGN_KEY_CHECKS=1;
